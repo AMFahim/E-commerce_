@@ -5,11 +5,7 @@ import MainRoutes from './Routes/MainRoutes';
 function App() {
   return (
     <div>
-     <Routes>
-      <Route path='/' element={<AddProduct/>}>
-
-      </Route>
-     </Routes>
+     <MainRoutes/>
     </div>
   );
 }
