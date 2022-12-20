@@ -1,11 +1,13 @@
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
-import AddProduct from '../Pages/Admin/AddProduct';
+import Home from '../Pages/Admin/Home/Home';
+import AddProduct from '../Pages/Admin/Products/AddProduct';
 
 const MainRoutes = () => {
     return (
             <Routes>
-                <Route path='/' element={<AddProduct/>}>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/products' element={<AddProduct/>}>
                 </Route>
             </Routes>
     );

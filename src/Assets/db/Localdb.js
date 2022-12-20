@@ -36,35 +36,59 @@ export const Navigation = [
     }
 ]
 
+
+
+
+//Products local db
+
 export const Products = [
     {
         id: 1,
         name: "chokbar1",
         price: 120,
-        stock: "In stock"
+        stock: "In stock",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
     },
     {
         id: 2,
         name: "chokbar2",
         price: 120,
-        stock: "In stock"
+        stock: "In stock",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
     },
     {
         id: 3,
         name: "chokbar3",
         price: 120,
-        stock: "In stock"
+        stock: "In stock",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
     },
     {
         id: 4,
         name: "chokbar4",
         price: 120,
-        stock: "In stock"
+        stock: "In stock",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
     },
     {
         id: 5,
         name: "chokbar5",
         price: 120,
-        stock: "In stock"
+        stock: "In stock",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
     },
+    {
+        id: 6,
+        name: "chokbar6",
+        price: 120,
+        stock: "In stock",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+    },
+    {
+        id: 7,
+        name: "chokbar6",
+        price: 120,
+        stock: "In stock",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+    }
 ]

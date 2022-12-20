@@ -5,7 +5,7 @@ import { Navigation } from '../../Assets/db/Localdb';
 const Navbar = () => {
     return (
         // < !--component -- >
-        <div className="w-full h-screen">
+        <div className="w-full mt-12">
             <section id="bottom-navigation" className="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
                 <div id="tabs" className="flex justify-between">
                     {
