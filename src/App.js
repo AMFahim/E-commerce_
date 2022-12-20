@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import AddProduct from './Pages/Admin/AddProduct';
+import MainRoutes from './Routes/MainRoutes';
 
 function App() {
   return (
     <div>
-     <h1>Hello World</h1>
+     <Routes>
+      <Route path='/' element={<AddProduct/>}>
+
+      </Route>
+     </Routes>
     </div>
   );
 }
