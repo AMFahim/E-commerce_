@@ -240,7 +240,7 @@ export const CustomerList = [
     {
         id: 1,
         name: "Jhone Doe",
-        profilePic: "",
+        profilePic: "https://abdul-mozid-fahim.netlify.app/static/media/photo.04e2fa87.jpg",
         orders: [
             {
                 id: 79,
@@ -269,7 +269,7 @@ export const CustomerList = [
     {
         id: 2,
         name: "Rafsan Doe",
-        profilePic: "",
+        profilePic: "https://abdul-mozid-fahim.netlify.app/static/media/photo.04e2fa87.jpg",
         orders: [
             {
                 id: 81,
@@ -298,7 +298,7 @@ export const CustomerList = [
     {
         id: 3,
         name: "Rafin Doe",
-        profilePic: "",
+        profilePic: "https://abdul-mozid-fahim.netlify.app/static/media/photo.04e2fa87.jpg",
         orders: [
             {
                 id: 85,
@@ -327,7 +327,7 @@ export const CustomerList = [
     {
         id: 4,
         name: "Rakib Doe",
-        profilePic: "",
+        profilePic: "https://abdul-mozid-fahim.netlify.app/static/media/photo.04e2fa87.jpg",
         orders: [
             {
                 id: 87,
@@ -356,7 +356,7 @@ export const CustomerList = [
     {
         id: 5,
         name: "Atik Doe",
-        profilePic: "",
+        profilePic: "https://abdul-mozid-fahim.netlify.app/static/media/photo.04e2fa87.jpg",
         orders: [
             {
                 id: 89,
