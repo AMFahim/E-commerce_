@@ -26,16 +26,16 @@ const OrderPreviews = () => {
                 <Link to="/orders" className='flex gap-2 text-gray-500'>View all <AiOutlineRight className='m-1' /></Link>
             </div>
             <div className='flex justify-between pt-4 gap-2'>
-                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={allItem}>
+                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary focus:bg-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={allItem}>
                     All
                 </button>
-                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={() => filterItem('pending')}>
+                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary focus:bg-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={() => filterItem('pending')}>
                     Pending
                 </button>
-                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full" onClick={() => filterItem('accepted')}>
+                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary focus:bg-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full" onClick={() => filterItem('accepted')}>
                     Accepted
                 </button>
-                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={() => filterItem('shipped')}>
+                <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary focus:bg-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={() => filterItem('shipped')}>
                     Shipped
                 </button>
             </div>
@@ -55,9 +55,9 @@ const OrderPreviews = () => {
                                                 {item.name}
                                             </h1>
                                             {
-                                                item.status=="pending"?
-                                                <p className='text-red-800 font-bold'>{item.status}</p>: 
-                                                <p className='text-green-400 font-bold'>{item.status}</p>
+                                                item.status === "pending" ?
+                                                    <p className='text-red-800 font-bold'>{item.status}</p> :
+                                                    <p className='text-green-400 font-bold'>{item.status}</p>
                                             }
                                         </div>
                                         <div className="flex justify-between mt-3 item-center">
@@ -83,9 +83,9 @@ const OrderPreviews = () => {
                                                 {item.name}
                                             </h1>
                                             {
-                                                item.status=="pending"?
-                                                <p className='text-red-800 font-bold'>{item.status}</p>: 
-                                                <p className='text-green-400 font-bold'>{item.status}</p>
+                                                item.status === "pending" ?
+                                                    <p className='text-red-800 font-bold'>{item.status}</p> :
+                                                    <p className='text-green-400 font-bold'>{item.status}</p>
                                             }
                                         </div>
                                         <div className="flex justify-between mt-3 item-center">

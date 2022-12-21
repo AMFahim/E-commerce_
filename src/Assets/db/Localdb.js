@@ -144,66 +144,90 @@ export const OverviewCards = [
 export const OrderData = [
     {
         id: 1,
+        orderId: 4325,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "pending",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "Paid",
+        orderCreated: "Today"
     },
     {
         id: 2,
+        orderId: 4326,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "accepted",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "COD",
+        orderCreated: "Yesterday"
     },
     {
         id: 3,
+        orderId: 4327,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "shipped",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "Paid",
+        orderCreated: "Today"
     },
     {
         id: 4,
+        orderId: 4328,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "pending",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "Paid",
+        orderCreated: "Yesterday"
     },
     {
         id: 5,
+        orderId: 4329,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "accepted",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "COD",
+        orderCreated: "Today"
     },
     {
         id: 6,
+        orderId: 4330,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "shipped",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "COD",
+        orderCreated: "Today"
     },
     {
         id: 7,
+        orderId: 4331,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "pending",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "COD",
+        orderCreated: "Yesterday"
     },
     {
         id: 8,
+        orderId: 4332,
         name: "Ice Creame",
         price: 20,
         stock: "In-stock",
         status: "accepted",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        payment: "COD",
+        orderCreated: "Today"
     }
 ]
