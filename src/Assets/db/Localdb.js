@@ -231,3 +231,182 @@ export const OrderData = [
         orderCreated: "Today"
     }
 ]
+
+
+// All Customer 
+
+
+export const CustomerList = [
+    {
+        id: 1,
+        name: "Jhone Doe",
+        profilePic: "",
+        orders: [
+            {
+                id: 79,
+                orderId: 4331,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "pending",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Yesterday"
+            },
+            {
+                id: 80,
+                orderId: 4332,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "accepted",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Today"
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "Rafsan Doe",
+        profilePic: "",
+        orders: [
+            {
+                id: 81,
+                orderId: 4333,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "pending",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Yesterday"
+            },
+            {
+                id: 82,
+                orderId: 4334,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "accepted",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Today"
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Rafin Doe",
+        profilePic: "",
+        orders: [
+            {
+                id: 85,
+                orderId: 4335,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "pending",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Yesterday"
+            },
+            {
+                id: 86,
+                orderId: 4336,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "accepted",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Today"
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: "Rakib Doe",
+        profilePic: "",
+        orders: [
+            {
+                id: 87,
+                orderId: 4337,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "pending",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Yesterday"
+            },
+            {
+                id: 88,
+                orderId: 4338,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "accepted",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Today"
+            }
+        ]
+    },
+    {
+        id: 5,
+        name: "Atik Doe",
+        profilePic: "",
+        orders: [
+            {
+                id: 89,
+                orderId: 4339,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "pending",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Yesterday"
+            },
+            {
+                id: 90,
+                orderId: 4340,
+                name: "Ice Creame",
+                price: 20,
+                stock: "In-stock",
+                status: "accepted",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+                payment: "COD",
+                orderCreated: "Today"
+            }
+        ]
+    },
+]
+
+export const PaymentTransictions = [
+    {
+        orderId: 4345,
+        productName: "Ice cream",
+        payment: "On-Hold",
+        price: 30,
+        productImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        orderDate: "20/12/2022"
+    },
+    {
+        orderId: 4346,
+        productName: "Ice cream",
+        payment: "Recived",
+        price: 30,
+        productImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        orderDate: "12/12/2022"
+    },
+    {
+        orderId: 4347,
+        productName: "Ice cream",
+        payment: "Refund",
+        price: 30,
+        productImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJJBOoxD5ZY85V0pz-WDgoSj4aR5bdOn3__wqmH2T&s",
+        orderDate: "10/12/2022"
+    },
+]

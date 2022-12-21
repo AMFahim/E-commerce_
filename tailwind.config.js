@@ -6,7 +6,8 @@ module.exports = {
       colors: ({colors}) => ({
         ...colors,
         "primary": "#0170BA",
-        "goldenrod": "#FF6A00"
+        "goldenrod": "#FF6A00",
+        "greencard": "#00B600"
       })
     },
   },
