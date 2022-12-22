@@ -19,10 +19,12 @@ This project has page:
 
 ## ScreenShots:
 
-<img src="https://i.ibb.co/44wtjZ6/Screenshot-20221222-203154-Chrome.jpg" alt="Home page"></img>
-<img src="https://i.ibb.co/QjrGVwY/Screenshot-20221222-203531-Chrome.jpg" alt="Order page"></img>
-<img src="https://i.ibb.co/PgQ3vbc/Screenshot-20221222-203545-Chrome.jpg" alt="Product page"></img>
-<img src="https://i.ibb.co/Vt2np7V/Screenshot-20221222-203416-Chrome.jpg" alt="Manages page"></img>
-<img src="https://i.ibb.co/N1JsXZD/Screenshot-20221222-203453-Chrome.jpg" alt="Customer Accounts page"></img>
-<img src="https://i.ibb.co/1m0VV7q/Screenshot-20221222-203701-Chrome.jpg" alt="SignUp page"></img>
-<img src="https://i.ibb.co/VgDmHYK/Screenshot-20221222-203654-Chrome.jpg" alt="Login page"></img>
+<div>
+<img style="height:500px; weight: 300px" src="https://i.ibb.co/44wtjZ6/Screenshot-20221222-203154-Chrome.jpg" alt="Home page"></img>
+<img style="height:500px; weight: 300px" src="https://i.ibb.co/QjrGVwY/Screenshot-20221222-203531-Chrome.jpg" alt="Order page"></img>
+<img style="height:500px; weight: 300px" src="https://i.ibb.co/PgQ3vbc/Screenshot-20221222-203545-Chrome.jpg" alt="Product page"></img>
+<img style="height:500px; weight: 300px" src="https://i.ibb.co/Vt2np7V/Screenshot-20221222-203416-Chrome.jpg" alt="Manages page"></img>
+<img style="height:500px; weight: 300px" src="https://i.ibb.co/N1JsXZD/Screenshot-20221222-203453-Chrome.jpg" alt="Customer Accounts page"></img>
+<img style="height:500px; weight: 300px" src="https://i.ibb.co/1m0VV7q/Screenshot-20221222-203701-Chrome.jpg" alt="SignUp page"></img>
+<img style="height:500px; weight: 300px" src="https://i.ibb.co/VgDmHYK/Screenshot-20221222-203654-Chrome.jpg" alt="Login page"></img>
+</div>
