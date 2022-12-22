@@ -1,10 +1,29 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { OrderData } from '../../../Assets/db/Localdb';
 
 const OrderPreviews = () => {
+    // get all orders
+    const [orders, setOrders] = useState([])
+    // filter order 
     const [order, setOrder] = useState([])
+
+
+    //fetch all order data with axios
+    const getAllOrder = async() => {
+        try {
+            const res = await axios.get('https://e-commerce-admin-three.vercel.app/api/v1/orderdata')
+            setOrders(res.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        getAllOrder()
+    }, [])
 
     const allItem = () => {
         setOrder([])
@@ -12,7 +31,7 @@ const OrderPreviews = () => {
 
 
     const filterItem = (categoryItem) => {
-        const updateItems = OrderData.filter((curItem) => {
+        const updateItems = orders.filter((curItem) => {
             return curItem.orderCreated === categoryItem
         })
         setOrder(updateItems)
@@ -68,7 +87,7 @@ const OrderPreviews = () => {
                             </div>
                         </div>
                     )) :
-                    OrderData.map(order => (
+                    orders.map(order => (
                         <div key={order.id} className='bg-white shadow-lg py-3 mt-4 m-3 rounded-lg'>
                             <div className="flex max-w-md overflow-hidden bg-white rounded-lg my-4 border-b-2">
                                 <div className="w-1/3 bg-cover bg-landscape">

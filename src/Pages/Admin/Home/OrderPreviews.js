@@ -1,12 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineRight } from 'react-icons/ai';
-import { OrderData } from '../../../Assets/db/Localdb';
 import { Link } from 'react-router-dom';
 import UiToggleBtn from '../../../Components/ui/UiToggleBtn';
 import { BsThreeDotsVertical } from 'react-icons/bs';
+import axios from 'axios';
 
 const OrderPreviews = () => {
+    const [order, setOrder] = useState([])
     const [product, setProduct] = useState([])
+
+    const getAllOrders = async() => {
+        try {
+            const res = await axios.get("https://e-commerce-admin-three.vercel.app/api/v1/orderdata")
+            console.log(res.data)
+            setOrder(res.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        getAllOrders()
+    },[])
 
     const allItem = () => {
         setProduct([])
@@ -14,7 +29,7 @@ const OrderPreviews = () => {
 
 
     const filterItem = (categoryItem) => {
-        const updateItems = OrderData.filter((curItem) => {
+        const updateItems = order.filter((curItem) => {
             return curItem.status === categoryItem
         })
         setProduct(updateItems)
@@ -47,7 +62,7 @@ const OrderPreviews = () => {
                             <div key={item.id}>
                                 <div className="flex max-w-md overflow-hidden bg-white rounded-lg shadow-lg my-4">
                                     <div className="w-1/3 bg-cover bg-landscape">
-                                        <img src={item.image}></img>
+                                        <img src={item.image} alt={item.name}></img>
                                     </div>
                                     <div className="w-2/3 p-4">
                                         <div className='flex justify-between'>
@@ -71,7 +86,7 @@ const OrderPreviews = () => {
                                 </div>
                             </div>
                         )) :
-                        OrderData.map(item => (
+                        order.map(item => (
                             <div key={item.id}>
                                 <div className="flex max-w-md overflow-hidden bg-white rounded-lg shadow-lg my-4">
                                     <div className="w-1/3 bg-cover bg-landscape">

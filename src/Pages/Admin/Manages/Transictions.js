@@ -1,8 +1,22 @@
-import React, { useState } from 'react';
-import { PaymentTransictions } from '../../../Assets/db/Localdb';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const Transictions = () => {
+    const [transiction, setTransiction] = useState([])
     const [payment, setPayment] = useState([])
+
+    const getAllPaymentTransictions = async() => {
+        try {
+            const res = await axios.get("https://e-commerce-admin-three.vercel.app/api/v1/payments")
+            setTransiction(res.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        getAllPaymentTransictions()
+    },[])
 
     const allItem = () => {
         setPayment([])
@@ -10,7 +24,7 @@ const Transictions = () => {
 
 
     const filterItem = (paymentItem) => {
-        const updatePayments = PaymentTransictions.filter((currentPayment) => {
+        const updatePayments = transiction.filter((currentPayment) => {
             return currentPayment.payment === paymentItem
         })
         setPayment(updatePayments)
@@ -21,7 +35,7 @@ const Transictions = () => {
             <div>
                 <div className='flex justify-between pt-4 gap-2'>
                     <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary focus:bg-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={allItem}>
-                        All ({PaymentTransictions.length})
+                        All ({transiction.length})
                     </button>
                     <button type="button" className="py-2 px-2 bg-white border-2 text-gray-600 hover:bg-primary focus:ring-primary focus:bg-primary text-white focus:ring-offset-priamry-200 focus:text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full" onClick={() => filterItem('On-Hold')}>
                         On Hold
@@ -59,7 +73,7 @@ const Transictions = () => {
                                     </div>
                                 </div>
                             )) :
-                            PaymentTransictions.map(payTrans => (
+                            transiction.map(payTrans => (
                                 <div key={payTrans.orderId} className="shadow-lg rounded-2xl bg-white dark:bg-gray-800 p-4">
                                     <div className="flex-row gap-4 flex justify-between items-center">
                                         <div className="flex-shrink-0">

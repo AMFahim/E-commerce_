@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MainLayout from '../../../Layout/MainLayout';
-import { Products } from '../../../Assets/db/Localdb';
 import UiToggleBtn from '../../../Components/ui/UiToggleBtn';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import UiButton from '../../../Components/ui/UiButton';
+import axios from 'axios';
 
 
 const AddProduct = () => {
+    const [product, setProduct] = useState([])
+
+    const getAllProducts = async() => {
+        try {
+            const res = await axios.get("https://e-commerce-admin-three.vercel.app/api/v1/products")
+            setProduct(res.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        getAllProducts()
+    },[])
     return (
         <MainLayout>
 
@@ -23,7 +37,7 @@ const AddProduct = () => {
             {/* Products  */}
 
             {
-                Products.map(item => (
+                product.map(item => (
                     <div key={item.id}>
                         <div className="flex max-w-md overflow-hidden bg-white rounded-lg shadow-lg my-4">
                             <div className="w-1/3 bg-cover bg-landscape">

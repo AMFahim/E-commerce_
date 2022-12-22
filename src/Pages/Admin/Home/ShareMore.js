@@ -1,5 +1,4 @@
 import React from 'react';
-import UiButton from '../../../Components/ui/UiButton';
 import { BsWhatsapp } from 'react-icons/bs';
 import UiSocialButton from '../../../Components/ui/UiSocialButton';
 
